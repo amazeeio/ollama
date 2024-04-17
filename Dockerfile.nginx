@@ -14,7 +14,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 # Make the entrypoint script executable
 RUN chmod +x /entrypoint.sh
-
+RUN touch /var/run/nginx.pid
 RUN chown -R 10000:10001 /etc/nginx /var/cache/nginx /var/run /var/log/nginx
 
 # Set the entrypoint script to run on container start
