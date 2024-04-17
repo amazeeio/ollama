@@ -7,7 +7,7 @@ services:
     labels:
       lagoon.type: basic-persistent
       lagoon.persistent: /root/.ollama
-      lagoon.service.port: 11435
+      lagoon.service.port: 11434
     volumes:
       - ./root/.ollama:/home/ollama/.ollama:delegated
     platform: linux/amd64
